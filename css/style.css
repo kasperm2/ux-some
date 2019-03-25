@@ -84,6 +84,93 @@ nav {
     display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+Colours:
+Blå: #94C4BB
+Guld: #D3C680
+Sort: #7B7B7B
+Hvid: #FFFFFF
+*/
+
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+.medialab {
+  text-transform: none;
+}
+
+.welcome {
+  width: 100%;
+  background-color: #94C4BB;
+  padding: 45px 50px;
+}
+
+.welcome h1 {
+  color: white;
+  text-align: center;
+}
+
+.cta {
+  border: 3px solid white;
+  padding: 10px 0;
+  margin: 10px auto;
+  color: white;
+  width: 260px;
+}
+
+.cta:hover {
+  transition: .2s;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.cta a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ctablack {
+  border: 3px solid black;
+  margin: 30px 0;
+  padding: 10px 0;
+}
+.ctaflex {
+  width: 80%;
+}
+.ctaflex a {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+}
+
+.ctablack:hover {
+  transition: .2s;
+  border: 3px solid #9a9a9a;
+}
+
+footer {
+  background-color: #D3C680;
+  padding: 5% 10%;
+  color: white;
+}
+
+footer hr {
+  margin: 10px 0;
+  width: 100%;
+}
+@media only screen and (min-width: 980px;)
+
+
 
 
 /* Mobile menu - media queries*/
