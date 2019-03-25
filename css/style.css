@@ -1,3 +1,17 @@
+/* Generel styling*/
+* {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,p{
+  font-family: 'roboto';
+}
+
+
 
 /* Menu */
 header {
@@ -5,7 +19,7 @@ header {
     width: 100%;
     padding: 0 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     box-shadow: 0 0 5px #aaaaaa;
 }
@@ -14,14 +28,14 @@ header {
     display: flex;
     align-items: center;
     margin-left: .5em;
-    color: #492628;
+    color: #000;
 
 }
 
 
 .logo1 {
-    width: 70px;
-    height: 50px;
+    width: 50px;
+    height: 30px;
     background-color: #fff;
     position: absolute;
     top: 15px;
@@ -30,7 +44,7 @@ header {
 
 nav {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 
@@ -38,10 +52,10 @@ nav {
     display: flex;
     margin-right: .5em;
     list-style: none;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
 
 
 }
@@ -49,17 +63,17 @@ nav {
 #main-nav a {
     display: block;
     margin-left: 1em;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4em;
-    color: #492628;
+    color: #000;
     text-decoration: none;
     margin: 0 35px;
-    font-family: tondo, sans-serif;
-    font-weight: 500;
+    font-family: roboto, sans-serif;
+    font-weight: 700;
 }
 
 #main-nav a:hover {
-    color: #7e7f2f;
+    color: #69acb9;
 }
 
 .active {
@@ -70,29 +84,7 @@ nav {
     display: none;
 }
 
-.social {
-    position: absolute;
-    right: 0;
-    justify-content: flex-end;
-    top: 20px;
-}
 
-.social2 {
-    position: absolute;
-    right: 50px;
-    justify-content: flex-end;
-    top: 20px;
-}
-
-.social2 img {
-    width: 40px;
-    height: 40px;
-}
-
-.social img {
-    width: 40px;
-    height: 40px;
-}
 
 /* Mobile menu - media queries*/
 
@@ -150,22 +142,6 @@ nav {
         border-bottom: none;
     }
 
-    .social,
-    .social2 {
-        justify-content: center;
-        width: 100%;
-        top: auto;
-        line-height: 0px;
-    }
-
-    .social {
-        padding-left: 40px;
-        background-color: #fff;
-    }
-
-    .social2 {
-        right: 30px;
-    }
 
 }
 
