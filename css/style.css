@@ -8,19 +8,22 @@
 }
 
 h1,h2,h3,h4,h5,p{
-  font-family: 'roboto';
+  font-family: 'Montserrat', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
 
 
 /* Menu */
 header {
     background-color: #fff;
     width: 100%;
-    padding: 0 20px;
+    padding: 70% 20px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     box-shadow: 0 0 5px #aaaaaa;
     grid-area: h;
 }
@@ -35,17 +38,17 @@ header {
 
 
 .logo1 {
-    width: 50px;
-    height: 30px;
+    width: 130px;
+    height: 90px;
     background-color: #fff;
     position: absolute;
-    top: 15px;
+    top: 30px;
+    left: 60px;
 }
 
 
 nav {
     width: 100%;
-    justify-content: flex-end;
 }
 
 
@@ -86,18 +89,32 @@ nav {
     display: none;
 }
 
+ul#main-nav{
+  padding-inline-start: 0px;
+}
+
+nav, div.logo-burger{
+  grid-row-start: 1;
+  display: grid;
+  grid-row-end: 3;
+}
+
 /* forside */
 
 main{
   width: 100%;
   display: grid;
   height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../images/forside.png);
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
       "h h m m m m m m m m m m"
       "h h m m m m m m m m m m"
       "h h k k k k k k k k k k"
       "h h k k k k k k k k k k";
+
 }
 
 .main-content{
@@ -114,6 +131,106 @@ main{
   position: absolute;
 }
 
+.main-content{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-content h1{
+  font-size: 4.5em;
+  color: #fff;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 8% 0 1.5% 0;
+
+}
+
+.cta-bio{
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 15%;
+}
+
+.cta-bio p, .cta-main{
+  width: 57%;
+}
+.cta-bio p{
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.cta-main h3{
+  margin-top: 4%;
+  padding: 13px 20px;
+  background-color: #fff;
+  width: 50%;
+  text-align: center;
+  font-size: 1em;
+  color: #23675c;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.kategorier{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-top: 20%;
+  padding-right: 2%;
+}
+
+.kategori-1 hr{
+  width: 62%;
+  height: 2px;
+  margin-left: 8px;
+  color: #fff;
+  background-color: #fff;
+  border: 0px;
+}
+
+.kategori-1{
+  flex-direction: row;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  margin-right: 1%;
+}
+
+.kategori-1 h2{
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.buttons{
+flex-direction: row;
+display: flex;
+padding-bottom: 9%;
+}
+
+.buttons a{
+  padding: 20px;
+}
+
+.buttons h3{
+  padding: 13px 20px;
+  background-color: #fff;
+  width: 222px;
+  text-align: center;
+  font-size: 0.7em;
+  color: #23675c;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
 
 
@@ -182,13 +299,11 @@ main{
 
 /*MEDIA QUERY TABLET AND ABOVE*/
 
-@media all and (min-width: 1200px) and (max-width: 1500px) {
+@media all and (min-width: 1200px) and (max-width: 1700px) {
 
     /*HEADER NAV*/
     header {
         display: flex;
-        justify-content: center;
-        align-items: center;
 
     }
 
