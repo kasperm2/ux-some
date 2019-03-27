@@ -44,7 +44,6 @@ header {
   position: absolute;
   top: 30px;
   left: 60px;
-  position: fixed;
 }
 
 nav {
@@ -61,7 +60,6 @@ nav {
   margin-bottom: 15px !important;
   flex-direction: column;
   z-index: 50;
-  position: fixed;
 }
 
 #main-nav a {
@@ -508,7 +506,8 @@ main {
 
   #main-nav {
     justify-content: center;
-    width: 100%;
+/* Remove large hover box - width: 100%*/
+    width: 15%;
   }
 
   .hidden {
@@ -520,8 +519,11 @@ main {
   }
 }
 
-/*@media all and (min-width: 1200px){
-  header{
-    position: auto;
+@media all and (min-width: 1200px){
+  .logo1{
+    position: fixed;
   }
+  #main-nav{
+  position: fixed;
+}
 }
