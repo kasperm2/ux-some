@@ -362,14 +362,12 @@ main {
   justify-content: center;
 }
 
-
 .image1 h4,
 .image2 h4,
 .image3 h4,
 .image4 h4,
 .image5 h4,
-.image6 h4
-{
+.image6 h4 {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -385,7 +383,7 @@ main {
 .image3:hover .image3-img,
 .image4:hover .image4-img,
 .image5:hover .image5-img,
-.image6:hover .image6-img  {
+.image6:hover .image6-img {
   opacity: 0.4;
 }
 
@@ -394,8 +392,7 @@ main {
 .image3:hover .overlay-img,
 .image4:hover .overlay-img,
 .image5:hover .overlay-img,
-.image6:hover .overlay-img
- {
+.image6:hover .overlay-img {
   opacity: 1;
   text-align: center;
   width: 100%;
@@ -405,6 +402,47 @@ main {
   font-weight: 400;
 }
 
+/* Guides */
+.main2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "h h y y y y y y y y y y"
+    "h h y y y y y y y y y y"
+    "h h t t t t t t t t t t"
+    "j j w w w w w w w w w w"
+    "j j s s s s s s s s s s"
+    "j j i i i i i i i i i i"
+    "j j i i i i i i i i i i"
+    "f f i i i i i i i i i i";
+}
+
+.heading-3 {
+  grid-area: y;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: #fff;
+}
+
+.heading-3, .guide-text{
+  background-color: #81adb4;
+}
+
+.guide-text{
+ grid-area: t;
+ font-size: 1.3em;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+
+.guide-text p{
+  width: 65%;
+  color: #fff;
+}
 
 
 
@@ -507,7 +545,7 @@ main {
 
   #main-nav {
     justify-content: center;
-/* Remove large hover box - width: 100%*/
+    /* Remove large hover box - width: 100%*/
     width: 15%;
   }
 
@@ -520,11 +558,67 @@ main {
   }
 }
 
-@media all and (min-width: 1200px){
-  .logo1{
+@media all and (min-width: 1200px) {
+  .logo1 {
     position: fixed;
   }
-  #main-nav{
-  position: fixed;
+
+  #main-nav {
+    position: fixed;
+  }
 }
+
+@media all and (max-width: 768px) {
+
+  /*forside */
+  .main-content h1 {
+    font-size: 2.8em;
+  }
+
+  .cta-bio p, .cta-main {
+    width: 100%;
+  }
+
+  .cta-bio p {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .cta-main h3 {
+    width: 100%;
+  }
+
+  .kategorier {
+    align-items: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .kategori-1 h2 {
+    font-size: 2em;
+  }
+
+  .kategori-1 hr {
+    display: none;
+  }
+
+  .kategori-1 {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+
+  h2.subheader {
+    font-size: 30px;
+  }
+
+  .image-grid {
+    grid-template-areas:
+      "a a a a"
+      "b b c c"
+      "d d e e"
+      "g g g g";
+  }
 }
