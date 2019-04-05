@@ -444,6 +444,70 @@ main {
   color: #fff;
 }
 
+/* Udstyr */
+
+.main3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "h h y y y y y y y y y y"
+    "h h y y y y y y y y y y"
+    "h h t t t t t t t t t t"
+    "j j w w w w w w w w w w"
+    "j j s s s s s s s s s s"
+    "j j i i i i i i i i i i"
+    "j j i i i i i i i i i i"
+    "f f i i i i i i i i i i";
+}
+
+/* Find Medialab */
+
+.main4 {
+  width: 100%;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "h h q q q q q q q q q q"
+    "h h p p p p p p p p p p"
+    "h h p p p p p p p p p p"
+    "f f x x x x x x x x x x";
+}
+
+.h1-find, .kontakt-find, #map{
+  background-color: #81adb4;
+}
+
+
+#map {
+  height: 500px;
+  grid-area: p;
+
+}
+
+.h1-find{
+  font-size: 4.5em;
+  color: #fff;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 3% 0 1.5% 0;
+  grid-area: q;
+  justify-items: center;
+}
+
+.kontakt-find{
+  grid-area: x;
+  display: flex;
+  justify-content: center;
+  padding: 7% 0;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
 
 
 
@@ -620,5 +684,19 @@ main {
       "b b c c"
       "d d e e"
       "g g g g";
+  }
+
+  /* Find Medialab*/
+
+  .main4 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "h h h h"
+      "q q q q"
+      "p p p p"
+      "x x x x"
+      "f f f f";
   }
 }
