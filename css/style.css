@@ -444,6 +444,62 @@ main {
   color: #fff;
 }
 
+/* Toggle button */
+
+.toggler {
+    width: 100%;
+    grid-area: w;
+    background-color: #81adb4;
+    text-align: center;
+  }
+
+
+  #button {
+    padding: 0.5em 5em;
+    text-decoration: none;
+    width: 33%;
+  }
+  #effect {
+    position: relative;
+    width: 100%
+    padding: 0.4em;
+    border: none;
+    background-color: #81adb4;
+  }
+
+  #effect img{
+    background-color: #81adb4;
+  }
+
+  button, input[type="submit"], input[type="reset"] {
+  	background: none;
+  	color: inherit;
+  	border: none;
+  	padding: 0;
+  	font: inherit;
+  	cursor: pointer;
+  	outline: inherit;
+  }
+
+  .custom-button{
+    padding: 13px 20px !important;
+    background-color: #fff !important;
+    width: 22%;
+    text-align: center;
+    font-size: 1em !important;
+    color: #23675c !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    transition: all 0.5s ease-in-out;
+    font-family: Montserrat !important;
+    margin: 2% 0;
+  }
+
+  .custom-button:hover{
+    box-shadow: 10px 11px 20px -6px rgba(0, 0, 0, 0.3);
+    color: #000;
+  }
+
 /* Udstyr */
 
 .main3 {
