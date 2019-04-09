@@ -413,16 +413,14 @@ main {
 .main2 {
   width: 100%;
   display: grid;
+  height: 100%;
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
     "h h y y y y y y y y y y"
     "h h y y y y y y y y y y"
     "h h t t t t t t t t t t"
-    "j j w w w w w w w w w w"
-    "j j s s s s s s s s s s"
-    "j j i i i i i i i i i i"
-    "j j i i i i i i i i i i"
-    "f f i i i i i i i i i i";
+    "h h w w w w w w w w w w"
+    "h h w w w w w w w w w w";
 }
 
 .heading-3 {
@@ -432,6 +430,7 @@ main {
   align-items: center;
   font-size: 3em;
   color: #fff;
+  padding: 5% 0 2% 0;
 }
 
 .heading-3, .guide-text{
@@ -476,6 +475,7 @@ main {
 
   #effect img{
     background-color: #81adb4;
+    margin-bottom: 15px;
   }
 
   button, input[type="submit"], input[type="reset"] {
@@ -841,4 +841,46 @@ main {
       "x x x x"
       "f f f f";
   }
+
+  /* Guides */
+
+  .main2 {
+    width: 100%;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "h h h h"
+      "y y y y"
+      "t t t t"
+      "w w w w"
+      "w w w w";
+  }
+
+  .heading-3 h1{
+    font-size: 1em;
+    width: 80%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  .heading-3 h1{
+    text-align: center;
+  }
+
+  .guide-text{
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 5%;
+  }
+
+  #effect img{
+    width: 100%;
+  }
+
+  .custom-button{
+    text-align: center;
+    width: 30%;
+  }
+
 }
