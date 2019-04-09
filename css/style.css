@@ -883,4 +883,35 @@ main {
     width: 30%;
   }
 
+  /* oprydning */
+
+  .main-oprydning {
+    width: 100%;
+    background-color: #81adb4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "h h h h"
+      "o o o o"
+      "z z z z"
+      "z z z z"
+      "v v v v"
+      "v v v v"
+      "l l l l"
+      "l l l l"
+      "f f f f";
+  }
+
+  .hero-oprydning h1{
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .hero-oprydning p{
+    font-size: 1em;
+    line-height: 1.1em;
+    padding-bottom: 20px;
+  }
+
+
 }
