@@ -45,6 +45,14 @@ header {
   top: 30px;
   left: 60px;
 }
+.logo2 {
+  width: 130px;
+  height: auto;
+  background-color: #81adb4;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+}
 
 nav {
   width: 100%;
@@ -280,7 +288,7 @@ main {
 .empty-opr {
   grid-area: n;
   height: 100%;
-  background-color: #fff;
+  background-color: #81adb4;
 }
 
 .image-grid {
@@ -651,6 +659,107 @@ main {
   width: 80%;
 }
 
+.main-portraet {
+  display: grid;
+  width: 100%;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+  "h h aa aa aa aa aa aa aa aa aa aa"
+  "h h aa aa aa aa aa aa aa aa aa aa"
+  "h h ab ab ab ab ab ab ab ab ab ab"
+  "n n ab ab ab ab ab ab ab ab ab ab"
+  "n n ab ab ab ab ab ab ab ab ab ab"
+  "n n ac ac ac ac ac ac ac ac ac ac"
+  "n n ac ac ac ac ac ac ac ac ac ac"
+  "n n ac ac ac ac ac ac ac ac ac ac"
+  "n n ac ac ac ac ac ac ac ac ac ac"
+  "n n ad ad ad ad ad ad ad ad ad ad"
+  "n n ad ad ad ad ad ad ad ad ad ad"
+  "f f ad ad ad ad ad ad ad ad ad ad";
+}
+.heading-portraet {
+  grid-area: aa;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.heading-portraet h1 {
+  font-size: 4em;
+  padding: 4% 0 1% 0;
+}
+
+.hero-portraet {
+  grid-area: ab;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-portraet img {
+  width: 80%;
+}
+
+.bc-full {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+
+}
+.breadcrumbs, .breadcrumbs a {
+  font-family: 'Montserrat', 'Sans-serif';
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  transition: .3s;
+}
+.active-bc {
+  font-weight: 700;
+}
+
+.breadcrumbs a:hover {
+  color: #505050;
+}
+.portraet-text {
+  grid-area: ac;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+}
+.portraet-text p {
+  font-size: 1.4em;
+  padding-top: 10px;
+}
+
+
+.portraet-ill {
+  grid-area: ad;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portraet-ill img {
+  padding-top: 5%;
+  width: 80%;
+}
+
+.invert-color {
+  background-color: #81adb4 !important;
+}
+.invert-colora a {
+  color: #fff !important;
+}
+.find h4 {
+  color: #fff;
+}
+
 
 
 /* Mobile menu - media queries*/
@@ -765,7 +874,7 @@ main {
 }
 
 @media all and (min-width: 1200px) {
-  .logo1 {
+  .logo1, .logo2 {
     position: fixed;
   }
 
@@ -840,5 +949,24 @@ main {
       "p p p p"
       "x x x x"
       "f f f f";
+  }
+
+  .main-portraet {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "h h h h"
+    "aa aa aa aa"
+    "aa aa aa aa"
+    "ab ab ab ab"
+    "ab ab ab ab"
+    "ac ac ac ac"
+    "ac ac ac ac"
+    "ac ac ac ac"
+    "ac ac ac ac"
+    "ad ad ad ad"
+    "ad ad ad ad"
+    "f f f f";
   }
 }
